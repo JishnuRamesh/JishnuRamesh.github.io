@@ -1,0 +1,300 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header h2 {
+  font-family: 'Nixie One', cursive;
+}
+
+main {
+  background: #2C302E;
+}
+
+.nav-colored {
+  background: #000;
+}
+
+/*
+#navigation {
+  position: fixed;
+}
+*/
+
+header {
+  background-image:url('../image/priscilla-du-preez-95311.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+
+main .about {
+  padding:  20px;
+}
+
+main {
+  padding-top: : 10px;
+  padding-bottom: 20px;
+}
+
+
+.about-button {
+  border-color: red;
+  background-color: transparent;
+  opacity: 1;
+  color : white;
+  border-style: ridge;
+}
+
+
+header  a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+header  a:hover {
+  color: #000;
+}
+
+header  a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header  a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+header a i , footer span {
+  transition: visibility ease-in .4s, opacity ease-in .4s;
+  opacity: 0;
+}
+
+header a:hover i , footer i:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+header h2{
+  margin-top: .5em;
+  color: white;
+  font-size: 4em;
+}
+
+
+h1 {
+padding : 20px;
+font-size: 50px;
+color: #1F7A8C;
+}
+
+
+.project-color {
+  padding-left: 10px;
+}
+
+P {
+  color : #E1E5F2;
+  font-size: 20px;
+}
+
+.about-text a {
+  text-decoration: none;
+  color: red;
+}
+
+.about-text a:hover {
+  color : #1F7A8C;
+  transition: color ease-in 0.5s;
+  text-decoration: underline;
+  text-decoration-color: red;
+  transition: text-decoration ease-in 0.5s;
+}
+
+#education {
+  background-image: url('../image/education.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding : 40px;
+  background-attachment: fixed;
+
+}
+
+#education-color {
+  color : #1F7A8C;
+}
+
+#undergraduate, #graduate {
+  color : white;
+  padding : 20px;
+}
+
+
+
+#education button {
+  background-color:transparent;
+  opacity : 0.7;
+  padding-left: 10px;
+  border-color: red;
+  border-style: ridge;
+  color : white;
+}
+
+
+#project {
+  margin-top: -20px;
+  background-image: url('../image/project.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+#project1, #project2 {
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+
+.project-button {
+  background-color: transparent;
+  margin-top: 30px;
+  border-color: red;
+  border-style: ridge;
+  color : white;
+}
+
+.card {
+  background-color: transparent;
+  border-color: #E1E5F2;
+  border-width: thin;
+}
+
+.card:hover  {
+  border-color: #F40000;
+  border-style: groove;
+  border-width: thin;
+  transition: border-color ease-in .5s;
+  background-color: #1E3231;
+  transistion : background-color ease-in 1s;
+}
+
+.card-title, .card-subtitle {
+  color: #1F7A8C;
+}
+
+
+
+.card:hover h1 {
+    color : #FFFFFF;
+}
+
+
+button a, #project a {
+  color: inherit;
+}
+
+button a:hover , #project a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+#project p {
+  padding-top: 20px;
+  color: #E3E7D3;
+}
+
+
+footer {
+  background-image: url('../image/social.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .social-icon i {
+  margin : 20px;
+  margin-left :7%;
+  padding : 20px;
+  color : red;
+  align-items: center;
+  border-style : ridge;
+  border-width: thin;
+  border-color: transparent;
+}
+
+footer a:hover i {
+  border-color : #1F7A8C;
+  transition: border-color ease-in .4s;
+}
+
+
+.social span {
+  padding : 5px;
+  padding-top : 20px;
+  font-size: .2em;
+}
+
+.social-button {
+  padding-left: 10px;
+  background-color: transparent;
+  border-color: red;
+  border-style: ridge;
+  color : white;
+}
+
+.social-button:hover , .project-button:hover, #education button:hover, .about-button:hover {
+  border-style: dashed;
+  transition: border-width ease-in 0.5s;
+}
+
+
+@media(min-width : 990px){
+  header a {
+    margin-left: 1.5em;
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+
+  header button {
+    margin-top: 2em;
+  }
+}
+
+@media(max-width : 989px) {
+  header a {
+    margin-right : 2em;
+    padding-right: 5em;
+    font-size : 1.5em;
+    float: left;
+  }
+}
+
+@media(max-width : 767px){
+  .social-button, .project-button , .education-button, .about-button {
+    visibility: hidden;
+  }
+
+  footer .social-icon i {
+    padding : 0px;
+    margin : 0px;
+  }
+
+  main p:first {
+    margin-top : -40px;
+  }
+
+}
