@@ -9,11 +9,6 @@ function navScroll(){
 }
 
 
-
-
-
-
-
 window.onscroll = function() {
   navScroll();
 };
