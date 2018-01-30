@@ -56,26 +56,6 @@ function navScroll(){
       myNav.classList.remove("nav-colored");
     }
   }
-
-  else if (screen.width < 576 && screen.width > 532) {
-    if (document.documentElement.scrollTop > 485 || document.body.scrollTop > 485) {
-      myNav.classList.add("nav-colored");
-    }
-    else if (myNav.classList.contains("nav-colored")) {
-      myNav.classList.remove("nav-colored");
-    }
-  }
-
-
-  else  {
-    if (document.documentElement.scrollTop > 400 || document.body.scrollTop > 400) {
-      myNav.classList.add("nav-colored");
-    }
-    else if (myNav.classList.contains("nav-colored")) {
-      myNav.classList.remove("nav-colored");
-    }
-  }
-
 }
 
 
@@ -85,7 +65,7 @@ window.onscroll = function() {
 
 
 
-
+// Remove the collapsable menu once a link is clicked
 function getToggler() {
   var togglerButton = document.getElementById('myTogglerNav');
   var navLinks = document.getElementsByClassName('nav-item nav-link');
@@ -97,7 +77,10 @@ function getToggler() {
           }
       });
   }
-}
+  }
 
 
-window.onload = getToggler;
+
+window.onload = function () {
+  getToggler();
+};

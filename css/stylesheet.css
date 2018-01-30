@@ -12,6 +12,7 @@ main {
 
 .nav-colored {
   background: #000;
+  transition: background ease-in 1s;
 }
 
 
@@ -307,4 +308,11 @@ footer a:hover i {
     margin-top : -40px;
   }
 
+}
+
+@media (max-width : 575px) {
+  #navigation {
+    background: #000;
+    transition: background ease-in 1s;
+  }
 }
